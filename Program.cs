@@ -1,15 +1,20 @@
-﻿namespace RegexDemo
+namespace RegexDemo
 {
     class Program
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Please enter the First Name ");
-            string firstName = Console.ReadLine();
+            //Console.WriteLine("Please enter the First Name ");
+            //string firstname = Console.ReadLine();
+
 
             UserRegi user = new UserRegi();
-            bool val = user.FirstName(firstName);
+       
 
+            Console.WriteLine("Please enter email address:  ");
+            string email = Console.ReadLine();
+
+            bool val = user.Email(email);
             if (val)
             {
                 Console.WriteLine("Pattern Matched");
