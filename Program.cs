@@ -4,11 +4,11 @@
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Please enter the First Name ");
-            string firstName = Console.ReadLine();
+            Console.WriteLine("Please enter the Mobile Format ");
+            string Mobile = Console.ReadLine();
 
             UserRegi user = new UserRegi();
-            bool val = user.FirstName(firstName);
+            bool val = user. Mobile Format(Mobile);
 
             if (val)
             {
