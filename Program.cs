@@ -1,36 +1,41 @@
-namespace RegexDemo
+using RegexDemo;
+
+namespace TestProject
 {
-    class Program
+   // [TestClass]
+    public class UnitTest1
     {
-        public static void Main(string[] args)
+        //[TestMethod]
+        public void CheckFirstNameValidation()
         {
-            //Console.WriteLine("Please enter the First Name ");
-            //string firstname = Console.ReadLine();
+            //Arrange
+            UserRegi name = new UserRegi();
+            string firstName = "Vidhya";
+            //Assert.IsTrue(name.IsValidName(firstName));
 
+        }
+       // [TestMethod]
+        public void CheckLastNameValidation()
+        {
+            //Arrange
+            UserRegi name = new UserRegi();
+            string lastName = "Darade";
+            //Assert.IsTrue(name.IsValidName(lastName));
 
-            UserRegi user = new UserRegi();
-            //bool val = user.FirstName(firstname);
-
-            //if (val)
-            //{
-            //    Console.WriteLine("Pattern Matched");
-            //}
-            //else
-            //{
-            //    Console.WriteLine("Pattern Not Matched");
-            //}
-
-            Console.WriteLine("Please enter the  Clear All Mails ");
-            string Email = Console.ReadLine();
-            bool val1 = user.Clear All Mails(Email);
-            if (val1)
-            {
-                Console.WriteLine("Pattern Matched");
-            }
-            else
-            {
-                Console.WriteLine("Pattern Not Matched");
-            }
+        }
+        //[TestMethod]
+        public void Emailvalidation()
+        {
+            UserRegi name = new UserRegi();
+            string email = "abc@1.com";
+            //Assert.IsTrue(name.Email(email));
+        }
+        //[TestMethod]
+        public void Passwordvalidation()
+        {
+            UserRegi name = new UserRegi();
+            string pwd = "abcDsf1#";
+            //Assert.IsTrue(name.Password(pwd));
         }
     }
 }
