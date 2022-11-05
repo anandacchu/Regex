@@ -16,7 +16,7 @@ namespace RegexDemo
             }
             else
             {
-                Console.WriteLine("Pattern Not Matched");
+                Console.WriteLine("Pattern Not Matched,there must be 8 characters");
             }
         }
     }
